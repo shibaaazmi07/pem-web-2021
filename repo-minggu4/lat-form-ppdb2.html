@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>formPPDB </title>
+    <link rel="stylesheet" href="from1.css">
+</head>
+<body>
+    <div class="judul">
+        <table>
+            <th><img src="logo4.jpeg" alt="logo" width="250px" ></th>
+            <th>
+                <h1>FORMULIR PENDAFTARAN PPDB 2021</h1>
+                <p>SDN PANJANG 03 AMBARAWA</p>
+            </th>
+        </table>
+        <p>Alamat : Jalan Pemuda no 100 Panjang 09/03,Temenggungan,Panjang,Kec.Ambarawa,Kab.Semarang,Jawa Tengah[50614]</p>
+    </div>
+    <form action="dataform.php" method="POST" enctype="multipart/form-data">
+        <div class="info">
+            <fieldset>
+                <legend>Info Pendaftaran</legend>
+                <p>
+                    <label>NISN :</label>
+                    <input type="text" name="nisn" style="width: 365px;"  placeholder="masukan nomor nisn anda... " />
+                </p>
+                <p>
+                    <label>Asal Sekolah :</label>
+                    <input type="text" name="askol" style="width: 300px;" placeholder="masukan nama asal sekolah... "/>
+                </p>
+                <p>
+                    <label>Tahun Lulus :</label>
+                    <input type="text" name="talus" style="width: 310px;" placeholder="masukan tahun lulus saja "/>
+                </p>
+                <p>
+                    <label>lampirkan ijazah :</label>
+                    <input type="file" name="imgralus" accept="image/*"/>
+                    <input type="submit" name="tombol" value="simpan"/>
+                </p>
+            </fieldset>
+        </div>
+
+        <div class="peserta">
+            <fieldset>
+                <legend>Data Calon Peserta</legend>
+                <p>
+                    <label>Nama Lengkap :</label>
+                    <input type="text" name="nama" placeholder="masukan nama lengkap... "/>
+                </p>
+                <p>
+                    <label>NIK :</label>
+                    <input type="text" name="nik" style="width: 250px;"/>
+                </p>
+                <p>
+                    <label>Tempat,Tanggal lahir</label>
+                    <input type="text" name="tempat" placeholder="masukan tempat kelahiran"/>
+                    <input type="date" name="tl" />
+                
+                </p>
+                <p>
+                    <label>Umur</label>
+                    <input type="number" name="umur"/><label>tahun</label>
+                </p>
+                <p>
+                    <label>lampirkan foto akte kelahiran yang telah dilegalisir</label>
+                    <input type="file" name="imgakte" accept="image/*"/>
+                    <input type="submit" name="tombol" value="simpan"/>
+                </p>
+                <p>
+                    <label>Jenis Kelamin :</label>
+                    <label><input type="radio" name="jk" value="Laki-Laki"/>Laki-Laki</label>
+                    <label><input type="radio" name="jk" value="Perempuan"/>Perempuan</label>
+                </p>
+                <p>
+                    <label>Alamat</label>
+                    <p>
+                        <label>Desa/Kel.  :</label>
+                        <input type="text" name="desa"style="width: 200px;"/>
+                    </p>
+                    <p>
+                        <label>Kecamatan :</label>
+                        <input type="text" name="kec"style="width: 186px;"/>
+                    </p>
+                    <p>
+                        <label>Kabupaten :</label>
+                        <input type="text" name="kab" style="width: 188px;"/>
+                    </p>
+                    <p>
+                        <label>Provinsi : </label>
+                        <input type="text" name="prov" style="width: 210px;"/>
+                    </p>
+                </p>
+                <p>
+                    <label>Email :</label>
+                    <input type="email" name="email" placeholder="email aktif" style="width: 230px;"/>
+                </p>
+            </fieldset>
+        </div>
+
+        <div class="orangtua">
+            <fieldset>
+                <legend>Data Orang Tua</legend> 
+                <p>
+                    <label>lampirkan foto KK</label>
+                    <input type="file" name="imgkk" accept="image/*" />
+                    <input type="submit" name="tombol" value="simpan"/>
+                </p>
+                <p>
+                    <label>No Kartu Keluarga :</label>
+                    <input type="text" name="nokk" style="width: 200px;"/>
+                </p>
+                <p>
+                    <label>Nama Ayah Kandung :</label>
+                    <input type="text" name="namaayah" style="width: 180px;" placeholder="tuliskan nama lengkap ayah"/>
+                </p>
+                <p>
+                    <label>Agama :</label>
+                    <select name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Pekerjaan :</label>
+                    <input type="text" name="pa" />
+                </p>
+                <p>
+                    <label>Nama Ibu Kandung :</label>
+                    <input type="text" name="namaibu" style="width: 190px;" placeholder="tuliskan nama lengkap ibu"/>
+                </p>
+                <p>
+                    <label>Agama :</label>
+                    <select name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Pekerjaan :</label>
+                    <input type="text" name="pi" />
+                </p>
+                <p>
+                    <label>Alamat Orang Tua </label>
+                </p>
+                <p>
+                    <label>Desa/Kel.  :</label>
+                    <input type="text" name="desa" style="width: 200px;"/>
+                </p>
+                <p>
+                    <label>Kecamatan :</label>
+                    <input type="text" name="kec" style="width: 186px;"/>
+                </p>
+                <p>
+                    <label>Kabupaten :</label>
+                    <input type="text" name="kab"  style="width: 188px;"/>
+                </p>
+                <p>
+                    <label>Provinsi :</label>
+                    <input type="text" name="prov"  style="width: 210px;"/>
+                </p>
+            </fieldset>
+        </div>
+        <button>KIRIM</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open sans", sans-serif;
+    background: linear-gradient(to right, #6fa7f0 ,#a0dee0);
+    background-size: cover;
+    margin-left: 60px;
+    width: 90%;
+    font-size: 19px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  
+}
+.judul table{
+    width: 98%;
+}
+.judul table p{
+    text-align: center;
+    font-size: 50px;
+}
+.judul p{
+    text-align: center;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    margin-top: 0%;
+    
+}
+
+img{
+    opacity: 0.9;
+}
+div{
+    margin-top: 50px;
+}
+.orangtua{
+    margin-bottom: 40px;
+}
+
+legend{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+button {
+    margin-left: 90%;
+    font-size: 24px;
+    font-weight:bold ;
+    color: red;
+    margin-bottom: 60px;
+}
