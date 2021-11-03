@@ -1,0 +1,18 @@
+/*bagian dari css eksternal yang dapat dihubungkan dengan link atau import yang dituliskan pada file html*/
+p {
+    font-family: serif;
+    line-height: 1.75em;
+    font-size: 18px;
+    background-color: rgba(163, 148, 250, 0.568);
+    }
+
+    i {
+    font-family: sans;
+    color: orange;
+    text-decoration: underline;
+    }
+
+    h2 {
+    font-family: sans;
+    color: brown;
+}
