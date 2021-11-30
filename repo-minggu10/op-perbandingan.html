@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operator Perbandingan</title>
+    <!-- digunakan untuk membandingkan 2 nilai dan menghasilkan nilai boolean(true/false)-->
+    <style type="text/css">
+        body{
+            font-size: 27px;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-style: groove;
+            border-width: 12px;
+            border-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var aku = 20; 
+        var kamu = 19; 
+
+        // sama dengan var 
+        hasil = aku == kamu; 
+        document.write(`${aku} == ${kamu} = ${hasil}<br/>`); 
+            // perbedaan == dengan ===
+            //untuk == | var a="4" == 4 akan bernilai true ,jika
+            //untuk === | var a="4" === 4 akan bernilai false karena memperhatikan perbandingan tipe data 
+            //-->yaitu antara "4" string dengan 4 integer
+        hasil = "20" == aku; 
+        document.write(`${"20"} == ${aku} = ${hasil}, sama dengan 2 akan mengabaikan tipe data <br/>`);
+
+        //sama dengan tiga (===)    
+        hasil = "20" === aku; 
+        document.write(`${"20"} === ${aku} = ${hasil}, karena berbeda tipe data(sama dengan tiga akan memperhatikan tipe data) <br/>`);
+
+        // lebih besar 
+        var hasil = aku > kamu; 
+        document.write(`${aku} > ${kamu} = ${hasil}<br/>`); 
+        
+        // lebih besar sama dengan 
+        var hasil = aku >= kamu; 
+        document.write(`${aku} >= ${kamu} = ${hasil}<br/>`); 
+        
+        // lebih kecil 
+        var hasil = aku < kamu; 
+        document.write(`${aku} < ${kamu} = ${hasil}<br/>`); 
+        
+        // lebih kecil sama dengan 
+        var hasil = aku <= kamu; 
+        document.write(`${aku} <= ${kamu} = ${hasil}<br/>`); 
+        
+        // tidak sama dengan 
+        var hasil = aku != kamu; 
+        document.write(`${aku} != ${kamu} = ${hasil}<br/>`);
+
+        // tidak sama dengan berdasarkan nilai atau tipe data
+        var hasil = aku !== 20; // karena sama nilainya jadi hasilnya false
+        document.write(`${aku} !== ${20} = ${hasil}<br/>`);
+
+        var hasil = "aku" !== kamu; 
+        document.write(`${"aku"} !== ${kamu} = ${hasil}<br/>`);
+    </script>
+</body>
+</html>

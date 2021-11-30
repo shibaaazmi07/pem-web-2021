@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar Variable Lanjutan</title>
+</head>
+<body>
+    <script>
+        //mendeklarasikan variable dapat dengan 3 cara yaitu penggunaan var, let dan const.Tidak dapat digunakan ketiganya dalam satu scope atau blok yang sama 
+        //Lebih fleksible dan mudah jika menggunakan pilihan var
+        /* jika dengan let kita tidak bisa mendeklarasikan ulang variable yang telah ada atau menganti nilai dari variable yang telah dibuat 
+        seperti --> let a= "shibaa";
+                    let a = "azmi"; -->hal ini akan menyebabkan syntaxerror karena a telah dideklarasikan
+            jika dalam blok yang berbeda let dapat digunakan untuk deklarasi nilai baru pada variable yang ada
+            --> error
+            let x = 2;    
+            let x = 3;
+            -->benar 
+            let x= 2; menghasilkan x=2
+            let x= 4; menghasilkan x= 4 harus berada dalam blok yang berbeda atau proses deklarasi pertama telah selesai
+
+        dengan var kita bisa mengubah nilai dari varible yang telah dideklarasikan  
+        
+        const juga tidak bisa mendeklarasikan ulang variable yang telah ada atau menganti nilai dari variable yang telah dibuat
+            saat dideklarasikan harus beserta nilainya -->const name="azmi:" 
+                                            tidak bisa --> const name;
+                                                           name= "azmi";
+            constant arrays --> dapat mengubah nilai di dalam array dengan mendeklarasikan indexnya tetapi tidak bisa langsung mengubah semua isi array 
+            --> const name=["shibaa","azmi","farros"];
+            name[1]= "ayu"; 
+            hasilnya ["shibaa","ayu","farros"]
+            menambah nilai pada array 
+            name=["shibaa","ayu","farros"];
+            name.push(18); hasilnya ["shibaa","ayu","farros",18]                                              
+                    
+            */          
+        
+        //Penulisan variable
+            //salah disebabkan karena identitas variable diawali dengan angka --> var 02nama= "Shibaa Azmi";
+            //benar --> var nama02 ="Shibaa Azmi";
+
+            //benar --> var nama_ ="Shibaa Azmi";
+            //      --> var _nama= "Shibaa Azmi";
+            
+            //dianjurkan untuk menggunakan camelCase untuk penamaan variable dengan 2 suku kata
+            // --> var namaUniversitas = "Dian Nuswantoro"
+
+            //penamaan dianjurkan untuk menggunakan bahasa Inggris
+            //--> var universityName= "Dian Nuswantoro"
+
+        //mengubah isi dari suatu variable
+            //awal --> 
+            var age= 18;
+            //baru --> 
+            age= 19;
+
+        //Menghapus variable
+            var age= 19;
+            delete age;
+        
+            nama= "shibaa azmi";
+            delete nama;
+
+        //Pemangilan variable dengan type of cek di console
+        var nama= "Shibaa Azmi Farros Althoof"
+        var umur= 19;
+        var tinggi= 155.5;
+        var mahasiswi= true;
+
+        typeof nama;
+        typeof umur;
+        typeof tinggi;
+        typeof mahasiswi;
+
+    </script>
+</body>
+</html>
