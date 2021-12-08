@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan if/else/if(2)</title>
+    <!--memiliki 2> blok pilihan -->
+    <style type="text/css">
+        body{
+            font-size: 30px;
+            padding-left: 20px;
+            padding-top: 20px;
+            background-color:rgb(240, 190, 134);
+            font-family: fantasy;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        var nilai = prompt("Inputkan nilai akhir:"); 
+        var grade = ""; 
+        
+        if( 85 <= nilai && nilai<= 100) grade = "A" 
+        else if(80 <= nilai && nilai < 85) grade = "AB" 
+        else if(70 <= nilai && nilai < 80) grade = "B" 
+        else if(65 <= nilai && nilai < 70) grade = "BC" 
+        else if(60 <= nilai && nilai < 65) grade = "C" 
+        else if(50 <= nilai && nilai < 60) grade = "D" 
+        else grade = "E"; 
+        document.write(`<p>Grade anda: ${grade}</p>`); 
+        
+    </script>
+</body>
+</html>

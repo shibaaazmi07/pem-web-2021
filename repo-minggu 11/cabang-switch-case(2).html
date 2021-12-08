@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan switch/case(2)</title>
+    <style type="text/css">
+        body{
+            font-size: 27px;
+            padding-left: 20px;
+            padding-top: 20px;
+            background-color:rgb(211, 127, 141);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nilai = prompt("input nilai"); 
+        var grade = ""; 
+        
+        switch(true){ 
+            case nilai >= 90: 
+                grade = "A"; 
+                break; 
+            case nilai >= 80: 
+                grade = "B+"; 
+                break;
+            case nilai >= 70:
+                grade = "B"; 
+                break; 
+            case nilai >= 60: 
+                grade = "C+"; 
+                break; 
+            case nilai >= 50: 
+                grade = "C"; 
+                break; 
+            case nilai >= 40: 
+                grade = "D"; 
+                break; 
+            case nilai >= 30: 
+                grade = "E"; 
+                break; 
+            default: 
+                grade = "F"; 
+        }
+         
+        /*switch(true){
+            case  85 <= nilai && nilai<= 100:
+                grade= "A";
+                break;
+            case  80 <= nilai && nilai < 85:
+                grade= "AB";
+                break;
+            case  70 <= nilai && nilai < 80:
+                grade= "B";
+                break;
+            case  65 <= nilai && nilai < 70:
+                grade= "BC";
+                break;
+            case  60 <= nilai && nilai < 65:
+                grade= "C";
+                break;
+            case  50 <= nilai && nilai < 60:
+                grade= "D";
+                break;
+            default:
+                grade = "E";    
+        }*/
+        document.write(`<p>Grade anda: ${grade}</p>`); 
+        
+    </script>
+</body>
+</html>

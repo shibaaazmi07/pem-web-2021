@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perulangan do while</title>
+    <!--cara program bekerja:
+    perulangan do akan melakukan perulangan sebanyak 1 kali terlebih dahulu 
+    lalu melihat kondisi pada perulangan while
+        Bentuk umum
+        do { 
+            // blok kode yang akan diulang 
+        } while (<kondisi>);
+    -->
+    <style type="text/css">
+        body{
+            font-size: 27px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color:greenyellow;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var ulangi = confirm("Apakah anda mau mengulang?");
+        var counter = 0; 
+        do { 
+            counter++; 
+            ulangi = confirm("Apakah anda mau mengulang?"); 
+        } while(ulangi)
+        document.write("Perulangan do while telah dilakuakan sebanyak "+ counter +" kali");
+    </script>
+</body>
+</html>

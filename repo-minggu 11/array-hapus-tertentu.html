@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array hapus data tertentu</title>
+    <style type="text/css">
+        body{
+            font-size: 27px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color:dimgrey;
+            font-family:cursive;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //menghapus data indeks tertentu dengan ,method splice()
+        /*bentuk umum
+            array.splice(<indeks>, <total>);
+            total: jumlah data yang akan dihapus 
+        */
+        var bunga = ["Mawar", "Melati", "Anggrek", "Sakura"]; 
+        // hapus Anggrek 
+        document.write(bunga+"<br/>");
+        bunga.splice(2, 1);
+        document.write("Array data baru: "+ bunga+"<br/>");
+        document.write("<br/>");
+
+        var buku= ["novel", "makalah", "komik", "pelajaran"];
+        document.write(buku+"<br/>");
+        buku.splice(1,2); //--> menghapus 2 data, yang dimulai dari indeks 1
+        document.write("Array data baru: "+buku+"<br/>");
+    </script>
+</body>
+</html>
+

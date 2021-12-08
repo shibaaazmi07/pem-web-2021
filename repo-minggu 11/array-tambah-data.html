@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mengisi data ke array</title>
+    <style type="text/css">
+        body{
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color:rgba(139, 0, 0, 0.534);
+            font-family:cursive;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        //menambahkan data melalui indeks,tetapi kita harus tau panjang array (sebelum ditambahkan data) 
+        var mapel=["matematika", "fisika", "ips"];
+        document.write(mapel+"<br/>");
+        mapel[3]="kimia";
+        document.write("Array terbaru: " + mapel+"<br/>");
+        document.write("<br/>");
+
+        // membuat array 
+        var products = ["Senter", "Radio", "Antena", "Obeng"]; 
+        document.write(products+"<br/>"); //-->menampilkan array
+
+        // menambahkan tv ke dalam array products menggunakan metode push
+        products.push("Televisi"); 
+        mapel.push("biologi","bahasa inggris", "bahasa indonesia")//-->menambah data sekaligus
+        
+        // menapilkan isi array 
+        document.write("Array terbaru: " + products+"<br/>");
+        document.write("Array terbaru: " + mapel+"<br/>");
+
+        //menghapus array
+        products.pop();
+        document.write("<br/>");
+        document.write("Array terbaru setelah metode pop: "+  products+"<br/>");
+        delete mapel[3]; // data kimia hilang ,kekurangan menimbulkan rung kosong di dalam array
+        document.write("Array terbaru setelah delete: " + mapel+"<br/>");
+        </script>
+</body>
+</html>

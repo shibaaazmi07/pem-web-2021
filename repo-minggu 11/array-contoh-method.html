@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array method</title>
+    <style type="text/css">
+        body{
+            font-size: 27px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color:midnightblue;
+            font-family:cursive;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Method filter 
+        const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9]; 
+        // ambil data yang hanya habis dibagi dua 
+        // dapat ditampilkan dengan join dan toString
+        //jika join dapat memberi tambahan/pemisah(yg diinginkan) jika toString otomatis akan dipisahkan dengan tanda koma
+        document.write(angka.join(" - ")+"<br/>");
+        const filteredArray = angka.filter(item => item % 2 === 0); 
+        console.log(filteredArray) // -> [2, 4, 6, 8] 
+        document.write("Array baru setelah di filter: "+filteredArray.join(" - ")+"<br/>");
+        document.write("<br/>");
+
+        // Method Includes 
+        var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
+        document.write(tanaman+"<br/>"); 
+        // apakah kacang sudah ada di dalam array tanaman? 
+        var adaKacang = tanaman.includes("Kacang"); 
+        console.log(adaKacang); // -> true 
+        document.write("Apakah array memiliki data (kacang)? "+adaKacang +"<br/>");
+        // apakah bayam ada? 
+        var adaBayam = tanaman.includes("Bayam"); 
+        console.log(adaBayam); // -> false 
+        document.write("Apakah array memiliki data (bayam)? "+adaBayam +"<br/>");
+        document.write("<br/>");
+
+        //Method Short 
+        var alfabet = ['a','f','z','e','r','g'];
+        document.write(alfabet+"<br/>");
+        console.log(alfabet.sort()); //-> ["a", "e", "f", "g", "r", "z"]
+        document.write("Array baru setelah di urutkan: "+alfabet.toString()+"<br/>");  
+
+        var angka1 = [3,1,2,6,8,5]; 
+        document.write(angka1+"<br/>");
+        console.log(angka1.sort()); // -> [1, 2, 3, 5, 6, 8]
+        document.write("Array baru setelah di urutkan: "+angka1.toString()+"<br/>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array dan Perulangan</title>
+    <!--bertujuan untuk mengatasi jumlah variable/data(nilai indeks) yang banyak didalam array-->
+    <style type="text/css">
+        body{
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color:rgba(144, 238, 144, 0.671);
+            font-family:monospace;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // membuat array 
+        text="menggunakan length"
+        document.write("<b>"+"<i>"+text+"</i>"+"</b>");
+
+        var products = ["Senter", "Radio", "Antena", "Obeng"]; 
+        document.write("<h3>Daftar Produk:</h3>"); 
+        document.write("<ol>"); 
+            
+        // menggunakan perulangan untuk mencetak semua isi array 
+        //property length digunakan untuk mengambil panjang dari array(semua)
+        for(let i = 0; i < products.length; i++){ 
+            document.write(`<li>${ products[i] }</li>`); 
+        } 
+        document.write("</ol>");
+
+        //cara lain dengan method foreach()
+        text2="menggunakan method foreach"
+        document.write("<b>"+"<i>"+text2+"</i>"+"</b>"); 
+        products = ["Senter", "Radio", "Antena", "Obeng"]; 
+        document.write("<h3>Daftar Produk:</h3>"); 
+        document.write("<ol>"); 
+        
+        products.forEach((data) => { 
+            document.write(`<li>${data}</li>`); 
+        }); 
+        document.write("</ol>");
+    </script>
+</body>
+</html>

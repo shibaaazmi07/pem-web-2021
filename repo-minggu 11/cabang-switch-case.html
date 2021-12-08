@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan switch/case</title>
+    <!--merupakan bentuk lain dari percabangan if/else/if-->
+    <style type="text/css">
+        body{
+            font-size: 27px;
+            padding-left: 20px;
+            padding-top: 20px;
+            background-color:lightseagreen;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--susunan secara umum
+        switch(variabel){ 
+            case <value>: 
+                // blok kode 
+                break; 
+            case <value>: 
+                // blok kode 
+                break; 
+            default: 
+            // blok kode 
+        } -->
+        <script> 
+            var jawab = prompt("Selamat anda beruntung! Silahakan pilih hadiahmu dengan memasukan angka 1 sampai 5"); 
+            var hadiah = ""; 
+            switch(jawab){ 
+                case "1": 
+                    hadiah = "Tisu"; 
+                    break; 
+                case "2": 
+                    hadiah = "1 Kotak Kopi"; 
+                    break; 
+                case "3": 
+                    hadiah = "Sticker"; 
+                    break; 
+                case "4": 
+                    hadiah = "Minyak Goreng"; 
+                    break; 
+                case "5": 
+                    hadiah = "Uang Rp 50.000"; 
+                    break;
+                default: document.write("<p>Opps! anda salah pilih</p>"); 
+                } if(hadiah === ""){ 
+                    document.write("<p>Kamu gagal mendapat hadiah</p>"); 
+                } else { 
+                    document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2>"); } 
+        </script>
+</body>
+</html>

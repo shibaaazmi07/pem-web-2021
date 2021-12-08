@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan Nested</title>
+    <style type="text/css">
+        body{
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color:rgb(128, 184, 32);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        
+        var username = prompt("Username:"); 
+        var password = prompt("Password:"); 
+        
+        if(username == "shibaa_azmi"){ 
+            if(password == "pbw"){ 
+                document.write("<h2>Selamat datang shibaa!</h2>"); 
+            } else { 
+                document.write("<p>Password salah, silahkan coba lagi!</p>"); 
+            } 
+        } else { document.write("<p>Anda tidak terdaftar!</p>"); } 
+        
+
+        /* menggunakan operator logika
+        if(username == "shibaa_azmi"){ 
+            if(password == "pbw"){ 
+                document.write("<h2>Selamat datang shibaa!</h2>"); 
+            } else { document.write("<p>Password salah,silahkan coba lagi!</p>"); } 
+        } else { document.write("<p>Anda tidak terdaftar!</p>"); }
+        */
+
+        /*menggunakan operator logika AND (&&)
+        if(username == "shibaa_azmi" && password == "pbw"){ 
+            document.write("<h2>Selamat datang shibaa!</h2>"); 
+        } else { 
+            document.write("<p>Password salah,silahkan coba lagi!</p>"); }
+        */
+    </script>
+</body>
+</html>

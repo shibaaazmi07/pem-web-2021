@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perulangan foreach 2</title>
+    <style type="text/css">
+        body{
+            font-size: 27px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color:rgba(0, 0, 255, 0.568);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // kita punya array seperti berikut 
+        var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"]; 
+        // Kemudian kita tampilkan semua hari 
+        // dengan menggunakan method foreach,yang memiliki parameter fungsi callback
+        days.forEach(function(day){ 
+            document.write("<p>" + day + "</p>"); 
+        });
+
+        text= "Menggunakan arrow function"
+        document.write("<br/>"+text);
+        var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"]; 
+        days.forEach((day) => { 
+            document.write("<p>" + day + "</p>"); 
+        });
+    
+    </script>
+    
+</body>
+</html>
