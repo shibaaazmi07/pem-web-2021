@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Objek Awal</title>
+</head>
+<body>
+    <script>
+        //laptop --> objek
+        // properti,ciri khas (variabel)
+        var laptop = {  type: "ROG", model: "Flow X13", color: "Black", 
+        
+        // method ,perilaku (fungsi)
+        turnOn: function(){ console.log("ini method turn on"); }, 
+        proceed: function(){ console.log("ini method proceed"); }, 
+        turnOff: function(){ console.log("ini method turn off"); }, 
+        stop: function(){ 
+            console.log("ini method stop"); 
+        } 
+        };
+
+        console.log(laptop.type);//objek.properti -> laptop.type
+        console.log(laptop.model); 
+        console.log(laptop.color); 
+        laptop.turnOn(); //objek.method -> laptop.turnOn
+        laptop.proceed();
+        laptop.turnOff();
+        laptop.stop();
+    </script>
+</body>
+</html>

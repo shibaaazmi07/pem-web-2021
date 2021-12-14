@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API Javascript</title>
+    <style type="text/css">
+        body{
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color: rgba(210, 105, 30, 0.459);
+            font-family:monospace;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, 
+        maiores in?</p> 
+        
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit, 
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, 
+        maiores in?</p> 
+        
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit, 
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, 
+        maiores in?</p> 
+        
+    <script> 
+        var paragraf = document.getElementsByClassName("paragraf"); 
+        console.log(paragraf); 
+
+        //getElementByClassName() --> memilih element berdasarkan nama classnya
+        paragraf[0].style.color="white"
+        paragraf[1].style.color="blue"
+    </script>
+    
+</body>
+</html>

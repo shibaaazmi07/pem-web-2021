@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara membuat fungsi di JS</title>
+</head>
+<body>
+    <script>
+        
+        //dengan cara biasa
+        function carabiasa(){
+            console.log("Tulisan ini diinputkan dengan cara fungsi biasa");
+        }
+        carabiasa();
+
+        //menggunakan ekspresi atau fungsi anonim (anonymous function) atau fungsi tanpa nama
+        var ekspresi= function(){
+            console.log("Tulisan ini diinputkan dengan menggunakan ekspresi")
+        }
+        ekspresi();
+
+        //menggunakan tanda panah(arrow function) sebagai ganti function
+        var tandaPanah = () => { 
+            console.log("Tulisan ini diinputkan dengan menggunakan tanda panah"); 
+        } 
+        tandaPanah();
+        // atau seperti ini (jika isi fungsi hanya satu baris):
+        var tandaPanah2 = () => console.log("Tulisan ini diinputkan dengan menggunakan tanda panah");
+        tandaPanah2();
+
+        //menggunakan konstruktor, jurang direkomendasiikan 
+        //karena body fungsinya dibuat dalam bentuk string yang dapat mempengaruhi kinerja engine javascript
+        var konstruktor = new Function('console.log("Tulisan ini diinputkan dengan menggunakan konstruktor")');
+        konstruktor();
+
+   </script>
+</body>
+</html>
