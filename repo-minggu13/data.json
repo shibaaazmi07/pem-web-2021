@@ -1,8 +1,8 @@
 [ 
     { 
-        "nim":"1234", 
-        "nama":"Agung Suradji", 
-        "alamat":"Semarang", 
+        "nim":"A11.2020.12662", 
+        "nama":"Shibaa Azmi Farros Althoof", 
+        "alamat":"Ambarawa", 
         "jurusan":"Teknik Informatika", 
         "MK":[ 
             { 
@@ -33,9 +33,9 @@
     }, 
 
     { 
-        "nim":"1236", 
-        "nama":"Mira Rahmawan", 
-        "alamat":"Pemalang", 
+        "nim":"A14.2018.0000", 
+        "nama":"Daffa Muhammad Farros Althoof", 
+        "alamat":"Ambarawa", 
         "jurusan":"Sistem Informasi", 
         "MK":[ 
             { 
