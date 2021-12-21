@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Dasar Ajax</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Tutorial Ajax</h1> 
+    <div id="hasil"></div> 
+    <button onclick="loadContent()">Load Content</button> 
+
+    <script> 
+        function loadContent(){ 
+            //membuat objek ajax
+            var xhr = new XMLHttpRequest(); 
+            var url = "http://localhost/ajax_files/kode.json"; 
+            //menentukan dungsi handler untuk event
+            xhr.onreadystatechange = function(){ 
+                if(this.readyState == 4 && this.status == 200){ 
+                    document.getElementById("hasil").innerHTML = this.responseText; 
+                    } 
+                };
+                //menentukan method dan url
+                xhr.open("GET", url, true); 
+                //mengirimkan request
+                xhr.send(); 
+            }
+    </script>
+</body>
+</html>
