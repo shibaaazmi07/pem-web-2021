@@ -353,19 +353,6 @@ img{
     margin-top: 100px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .producstOnCart ul {
     text-align: left;
     display: flex;
@@ -478,36 +465,6 @@ img{
 .navbar-top > a:visited {
     color: #333333;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ========== keranjang belanja ==========*/
@@ -955,45 +912,6 @@ figure {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #sum-prices {
     padding-left: 5px;
 }
@@ -1166,16 +1084,6 @@ figure {
     padding: 5px;
     font-size: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 .rekomendasi__container{
     grid-template-columns: repeat(2, 1fr);
@@ -1631,7 +1539,7 @@ input{
 .center{
     position: absolute;
     top: 43%;
-    right: 30%;
+    right: 33%;
     transform: translate(-50%, -50%);
 }
 
@@ -1649,8 +1557,8 @@ input{
 
 .popUp{
     position: absolute;
-    top: 450%;
-    left:35%;
+    top: 300px;
+    left:50%;
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.25);
     width: 350px;
@@ -1662,7 +1570,7 @@ input{
 }
 
 .popUp.activeL{
-    top: 450%;
+    top: 300px;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     
